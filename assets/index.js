@@ -1,7 +1,7 @@
-import MediaPlayer from '@cristianbonomo/mediaplayer/lib/MediaPlayer.js';
-import AutoPlay from '@cristianbonomo/mediaplayer/lib/plugins/AutoPlay.js';
-import AutoPause from '@cristianbonomo/mediaplayer/lib/plugins/AutoPause.js';
-import AdsPlugin from '@cristianbonomo/mediaplayer/lib/plugins/Ads/index.js';
+import MediaPlayer from '../../mediaplayer/lib/MediaPlayer.js';
+import AutoPlay from '../../mediaplayer/lib/plugins/AutoPlay.js';
+import AutoPause from '../../mediaplayer/lib/plugins/AutoPause.js';
+import AdsPlugin from '../../mediaplayer/lib/plugins/Ads/index.js';
 const video = document.querySelector('video');
 const player = new MediaPlayer({ element: video, plugins: [new AutoPlay(), new AutoPause(), new AdsPlugin()] });
 const playButton = document.getElementById('playButton');
